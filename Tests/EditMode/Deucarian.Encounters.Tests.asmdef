@@ -1,0 +1,24 @@
+{
+  "name": "Deucarian.Encounters.Tests",
+  "rootNamespace": "Deucarian.Encounters.Tests",
+  "references": [
+    "Deucarian.Encounters",
+    "Deucarian.GameplayFoundation"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": [],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "noEngineReferences": true
+}
