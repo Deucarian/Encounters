@@ -1,0 +1,20 @@
+{
+  "packageId": "com.deucarian.encounters",
+  "displayName": "Deucarian Encounters",
+  "ownedCapabilities": [],
+  "runtimeAssemblies": [
+    "Deucarian.Encounters"
+  ],
+  "editorAssemblies": [],
+  "sampleAssemblies": [],
+  "testAssemblies": [
+    "Deucarian.Encounters.Tests"
+  ],
+  "requiredDependencies": [
+    "com.deucarian.gameplay-foundation"
+  ],
+  "optionalVersionDefinedDependencies": [],
+  "allowedDirectDebugCalls": [],
+  "allowedDirectUnityObjectLifetimeCalls": [],
+  "expectedSamplesRoot": "Samples~"
+}
