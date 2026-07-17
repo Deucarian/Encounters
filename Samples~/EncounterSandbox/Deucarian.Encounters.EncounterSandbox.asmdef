@@ -2,7 +2,8 @@
   "name": "Deucarian.Encounters.EncounterSandbox",
   "rootNamespace": "Deucarian.Encounters.Samples",
   "references": [
-    "Deucarian.Encounters"
+    "Deucarian.Encounters",
+    "Deucarian.GameplayFoundation"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],
