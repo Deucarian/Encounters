@@ -1,6 +1,6 @@
 {
   "name": "com.deucarian.encounters",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "Deucarian Encounters",
   "description": "Pure C# encounter foundations for stages, waves, spawn request scheduling, weighted selection, objective state, reward references, scaling descriptors, and snapshots.",
   "unity": "6000.3",
@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "com.deucarian.gameplay-foundation": "0.1.0"
+    "com.deucarian.gameplay-foundation": "0.1.1"
   },
   "samples": [
     {

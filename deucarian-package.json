@@ -1,12 +1,15 @@
 {
   "packageId": "com.deucarian.encounters",
   "displayName": "Deucarian Encounters",
+  "samplePolicy": "compiled-example",
   "ownedCapabilities": [],
   "runtimeAssemblies": [
     "Deucarian.Encounters"
   ],
   "editorAssemblies": [],
-  "sampleAssemblies": [],
+  "sampleAssemblies": [
+    "Deucarian.Encounters.EncounterSandbox"
+  ],
   "testAssemblies": [
     "Deucarian.Encounters.Tests"
   ],
