@@ -1,0 +1,16 @@
+{
+  "name": "Deucarian.Encounters.Tests.PlayMode",
+  "references": [
+    "Deucarian.Encounters",
+    "Deucarian.GameplayFoundation",
+    "Deucarian.Encounters.Unity",
+    "Deucarian.Diagnostics"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "autoReferenced": false,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ]
+}

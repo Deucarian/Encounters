@@ -3,7 +3,9 @@
   "rootNamespace": "Deucarian.Encounters.Tests",
   "references": [
     "Deucarian.Encounters",
-    "Deucarian.GameplayFoundation"
+    "Deucarian.GameplayFoundation",
+    "Deucarian.Encounters.Unity",
+    "Deucarian.Diagnostics"
   ],
   "includePlatforms": [
     "Editor"
@@ -20,5 +22,5 @@
   "optionalUnityReferences": [
     "TestAssemblies"
   ],
-  "noEngineReferences": true
+  "noEngineReferences": false
 }
