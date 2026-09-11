@@ -24,10 +24,15 @@ Allowed dependency shape:
 
 - May depend on Gameplay Foundation for deterministic IDs, ticks, random, tags, and validation primitives.
 - Runtime assembly keeps `noEngineReferences` enabled.
+- The separate Unity adapter assembly may reference World Spawning to forward
+  scheduled requests to its existing host; spawning and pool ownership remain
+  entirely in World Spawning. Editor schemas use the shared Editor package.
 
 Required dependencies and why:
 
 - `com.deucarian.gameplay-foundation`: shared identifiers, deterministic random/tick primitives, and validation helpers.
+- `com.deucarian.world-spawning`: typed spawnable/channel references and the
+  Unity spawn-request bridge. The pure encounter scheduler does not use Unity.
 
 Optional/version-defined dependencies:
 

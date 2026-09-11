@@ -1,0 +1,7 @@
+{
+  "name": "Deucarian.Encounters.Unity.Samples.DefinitionWorkflow",
+  "references": [
+    "Deucarian.Encounters",
+    "Deucarian.Encounters.Unity"
+  ]
+}

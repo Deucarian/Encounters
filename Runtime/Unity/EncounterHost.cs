@@ -9,6 +9,8 @@ namespace Deucarian.Encounters.Unity
     public sealed class EncounterHost : MonoBehaviour, IDiagnosticProvider
     {
         private EncounterProfile profile;
+        [SerializeField] private bool initializeFromDefinitions;
+        [SerializeField] private EncounterDefinitionCatalog definitions;
         private bool destroyed;
         public void Configure(EncounterProfile value)
         {
@@ -16,13 +18,19 @@ namespace Deucarian.Encounters.Unity
             if (profile != null) throw new InvalidOperationException("EncounterHost '" + name + "' is already configured.");
             profile = value ?? throw new ArgumentNullException(nameof(value));
         }
-        public EncounterStartStatus Start(EncounterKey encounter) => Profile.Start(encounter);
+        public EncounterStartStatus Begin(EncounterKey encounter) => Profile.Start(encounter);
         public void Stop() => Profile.Stop();
         public EncounterSnapshot Snapshot => Profile.Snapshot;
+        public void AdvanceTicks(long ticks) => Profile.AdvanceTicks(ticks);
+        public EncounterDrainResult DrainSpawnRequests(SpawnRequest[] buffer) => Profile.DrainSpawnRequests(buffer);
         private EncounterProfile Profile => profile ?? throw new InvalidOperationException("EncounterHost '" + name + "' is not configured. Supply its EncounterProfile and connect your existing tick/spawn-request integration during startup.");
         private void OnDestroy() { diagnosticRegistration?.Dispose(); diagnosticRegistration = null;  destroyed = true; profile = null; }
         private DiagnosticProviderRegistration diagnosticRegistration;
-        private void Awake() => diagnosticRegistration = DiagnosticProviderRegistry.Register(this);
+        private void Awake()
+        {
+            diagnosticRegistration = DiagnosticProviderRegistry.Register(this);
+            if (initializeFromDefinitions && profile == null) Configure(new EncounterProfile((definitions != null ? definitions : EncounterDefinitionCatalog.LoadProject()).CreateRuntimeDefinitions()));
+        }
         string IDiagnosticProvider.ProviderId => "encounters.host." + GetInstanceID();
         string IDiagnosticProvider.DisplayName => "EncounterHost";
         void IDiagnosticProvider.Collect(DiagnosticReportBuilder builder)

@@ -2,6 +2,7 @@
   "name": "Deucarian.Encounters.Editor",
   "rootNamespace": "Deucarian.Encounters.Editor",
   "references": [
+    "Deucarian.WorldSpawning",
     "Deucarian.Encounters",
     "Deucarian.Editor",
     "Deucarian.Encounters.Unity"

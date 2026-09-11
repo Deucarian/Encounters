@@ -11,16 +11,19 @@
     "Deucarian.Encounters.Editor"
   ],
   "sampleAssemblies": [
-    "Deucarian.Encounters.EncounterSandbox"
+    "Deucarian.Encounters.EncounterSandbox",
+    "Deucarian.Encounters.Unity.Samples.DefinitionWorkflow",
+    "Deucarian.Samples.Encounters.DefinitionDeclarations"
   ],
   "testAssemblies": [
     "Deucarian.Encounters.Tests",
     "Deucarian.Encounters.Tests.PlayMode"
   ],
   "requiredDependencies": [
-    "com.deucarian.editor",
     "com.deucarian.gameplay-foundation",
-    "com.deucarian.diagnostics"
+    "com.deucarian.editor",
+    "com.deucarian.diagnostics",
+    "com.deucarian.world-spawning"
   ],
   "optionalVersionDefinedDependencies": [],
   "allowedDirectDebugCalls": [],

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50211662a1023d140916d039372dca4f, type: 3}
+  m_Name: Definition_EncounterSampleWave
+  m_EditorClassIdentifier: Deucarian.Encounters.Unity::Deucarian.Encounters.Unity.EncounterDefinitionAsset
+  id: aa2e65dd52054071829baaf2b99d4bc9
+  displayName: EncounterSampleWave
+  waves:
+  - Id: first
+    Spawnable: {fileID: 11400000, guid: db5294d6162d092409506666d72b5aa2, type: 2}
+    StartTick: 0
+    Count: 1
+    BatchSize: 1
+    IntervalTicks: 1
+    Channel: {fileID: 11400000, guid: f1fb3fe2e4566e54f95d5c757be8e9cd, type: 2}
+    ScalingTier: 0
+  durationTicks: 120
+  seed: 1

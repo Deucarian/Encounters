@@ -2,6 +2,8 @@
   "name": "Deucarian.Encounters.Unity",
   "rootNamespace": "Deucarian.Encounters.Unity",
   "references": [
+    "Deucarian.WorldSpawning",
+    "Deucarian.GameplayFoundation",
     "Deucarian.Encounters",
     "Deucarian.Diagnostics"
   ],
