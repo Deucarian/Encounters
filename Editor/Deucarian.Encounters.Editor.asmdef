@@ -1,0 +1,20 @@
+{
+  "name": "Deucarian.Encounters.Editor",
+  "rootNamespace": "Deucarian.Encounters.Editor",
+  "references": [
+    "Deucarian.Encounters",
+    "Deucarian.Editor",
+    "Deucarian.Encounters.Unity"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

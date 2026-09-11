@@ -1,0 +1,17 @@
+{
+  "name": "Deucarian.Encounters.Unity",
+  "rootNamespace": "Deucarian.Encounters.Unity",
+  "references": [
+    "Deucarian.Encounters",
+    "Deucarian.Diagnostics"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
