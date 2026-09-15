@@ -4,17 +4,26 @@
   "samplePolicy": "compiled-example",
   "ownedCapabilities": [],
   "runtimeAssemblies": [
-    "Deucarian.Encounters"
+    "Deucarian.Encounters",
+    "Deucarian.Encounters.Unity"
   ],
-  "editorAssemblies": [],
+  "editorAssemblies": [
+    "Deucarian.Encounters.Editor"
+  ],
   "sampleAssemblies": [
-    "Deucarian.Encounters.EncounterSandbox"
+    "Deucarian.Encounters.EncounterSandbox",
+    "Deucarian.Encounters.Unity.Samples.DefinitionWorkflow",
+    "Deucarian.Samples.Encounters.DefinitionDeclarations"
   ],
   "testAssemblies": [
-    "Deucarian.Encounters.Tests"
+    "Deucarian.Encounters.Tests",
+    "Deucarian.Encounters.Tests.PlayMode"
   ],
   "requiredDependencies": [
-    "com.deucarian.gameplay-foundation"
+    "com.deucarian.gameplay-foundation",
+    "com.deucarian.editor",
+    "com.deucarian.diagnostics",
+    "com.deucarian.world-spawning"
   ],
   "optionalVersionDefinedDependencies": [],
   "allowedDirectDebugCalls": [],

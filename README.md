@@ -1,5 +1,15 @@
 # Deucarian Encounters
 
+## Typed definition workflow
+
+A wave selects existing spawnable and channel definitions. This scene steps the optional spawn driver manually so you can see when each scheduled request is emitted.
+
+Start with the [Definition Workflow walkthrough](Documentation~/DefinitionWorkflow.md).
+Import **Definition Workflow** in Package Manager for a configured sample scene
+and short caller scripts. Definitions can be edited as assets or editable C# declarations; generated keys
+work in code and Inspector dropdowns.
+
+
 `com.deucarian.encounters` is a pure C# Unity package for deterministic encounter scheduling.
 
 It owns stage, encounter, wave, spawn group, weighted table, objective, reward-reference, scaling descriptor, lifecycle, and snapshot primitives. It emits spawn requests into caller-owned buffers and does not instantiate, move, damage, reward, save, render, or query world objects.
@@ -75,3 +85,7 @@ git diff --check
 ## License
 
 MIT. See `LICENSE.md`.
+
+## Simple typed usage
+
+See [Simple usage](Documentation~/SimpleUsage.md) for the short caller, Inspector selections and one-time scoped setup.
